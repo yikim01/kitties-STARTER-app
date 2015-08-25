@@ -7,17 +7,37 @@
 
 
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/KittiesController.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
 
   </head>
 
-  <body>
+  <body ng-controller="KittiesController as vm" style="background: url('images/background.png')">
+    <h1>{{vm.allKitties.length}} Kitties for Adoption</h1>
+    <div id="container">
+      <div class="left-container">
+        <h2>Kitties for Adoption</h2>
+        <div class="dashed">
+          <ul>
+            <li>
+              <span class="kitties" ng-repeat="kitties in vm.allKitties"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-container">
+        <h2>Found their forever homes</h2>
+        <div class="dashed">
+          <ul>
+            <li>
+              <span class="kitties" ng-repeat="kitties in vm.allKitties"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    <!--Sourcing Angular-->
-
-    <!-- Source in module -->
-
-    <!-- Source in controller -->
-
+    </div>
   </body>
 </html>

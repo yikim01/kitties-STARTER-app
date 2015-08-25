@@ -1,20 +1,37 @@
 /*@import a Google Font here!*/
 
 body {
-
+  font-family: 'Pacifico', cursive;
 }
 
 #container {
-
+  width: 960px;
+  margin: 0 auto;
 }
 
 .dashed {
+  border: 1px dotted #FFB6C1;
+  border-radius: 20px;
+}
+
+.left-container {
+  float: left;
+
+}
+
+.right-container {
+  float: right;
 
 }
 
 .left-container, .right-container {
-
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
 }
-h1 {
 
+h1 {
+  text-align: center;
 }
