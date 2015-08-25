@@ -23,6 +23,7 @@
           <ul>
             <li>
               <span class="kitties" ng-repeat="kitties in vm.allKitties"></span>
+              <button class="destroy" ng-click="vm.remove(kitties)">Delete {{vm.kitties}} </button>
             </li>
           </ul>
         </div>
